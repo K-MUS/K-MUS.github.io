@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rodrigo Giner de la Vega</title>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <!--
     - favicon
   -->
@@ -125,7 +125,7 @@
         </ul>
 
         <div class="separator"></div>
-
+        <!--
         <ul class="social-list">
 
           <li class="social-item">
@@ -146,7 +146,7 @@
             </a>
           </li>
 
-        </ul>
+        </ul>-->
 
       </div>
 
@@ -181,10 +181,11 @@
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Blog</button>
           </li>
-      -->
+      
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Contact</button>
           </li>
+-->          
         </ul>
       </nav>
 
@@ -200,16 +201,14 @@
 
         <section class="about-text">
           <p>
-            I'm an expert SAP ABAP Developer with more that 17 years of experience. But my true passion was always design and create Video Games even since I was 6 years old playing
-            with my Datasette Commodore 64 and my Atari 2600.
+            I'm an expert SAP ABAP Developer with more that 17 years of experience. But my true passion was always to design and create Video Games even since I was 6 years old playing around
+            with my Datasette Commodore 64 and also my Atari 2600.
           </p>
-
           <p>
-            Co-Founder and Game Designer of Zonda Games, an indie Company based in Argentina, were I work in my spare time in several gaming projects. Currently I'm looking forward
-            to work full time as Game Designer. 
+            Co-Founder and Game Designer of Zonda Games, an indie Company based in Argentina, were I work in my spare time. Currently I'm looking forward to leave the SAP world to 
+            fulfil my dream and become a full time Game Designer.
           </p>
         </section>
-
 
         <!--
           - service
@@ -679,7 +678,7 @@
 
           <ul class="project-list">
             <li class="project-item  active" data-filter-item data-category="unreal engine" >
-              <a href = '#' id="myBtn">
+              <a href = '#' id="myBtn" class="myBtn">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
@@ -694,7 +693,7 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="core games">
-              <a href="#" id="myBtn">
+              <a href="#" id="myBtn" class="myBtn">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -710,7 +709,7 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="core games">
-              <a href="#">
+              <a href="#" id="myBtn" class="myBtn">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -726,7 +725,7 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="core games">
-              <a href="#">
+              <a href="#" id="myBtn" class="myBtn">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -742,7 +741,7 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="core games">
-              <a href="#">
+              <a href="#" id="myBtn" class="myBtn">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -758,7 +757,7 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="unity">
-              <a href="#">
+              <a href="#" id="myBtn" class="myBtn">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -774,7 +773,7 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="unity">
-              <a href="#">
+              <a href="#" id="myBtn" class="myBtn">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
@@ -829,36 +828,237 @@
         <div class="modal-content">
           <span class="close">&times;</span>
           <section class="about-text">
-            <h2 class="h2">Deadly Cube - Demo</h2>
+            <h2 class="h2">Unnamed</h2>
             <p>
-              I downloaded, learned and created this demo in less than 24hs. I found out the deadline to apply to Core Games Bootcamp was the next day.
+              Zonda Games first game using Unreal Engine 5. 
             </p>
             <p>
-              All hands on deck !!! I got the Core Games framework and quickly started reading the documentation to create this simple demo. 
-              At the end I was selected and finished the Fall 2020 Core Game Bootcamp afterwards.
+              The game is early stage of development.
             </p>
-            <iframe style="display:block; margin:0 auto;" width="560" height="315" src="https://www.youtube.com/embed/he0WB4_GWJ8" title="YouTube video player" modesbranding=1 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <img style="display:block; margin:0 auto;"  src="./assets/images/Mansion.jpg" alt="finance" loading="lazy" width="80%" data-testimonials-avatar>
           </section>
         </div>
       </div>
 
       <div id="myModal2" class="modal">
         <!-- Modal content -->
-        <div class="modal2-content">
+        <div class="modal-content">
           <span class="close">&times;</span>
           <section class="about-text">
-            <h2 class="h2">PEPEPEPEo</h2>
+            <h2 class="h2">Primal World</h2>
             <p>
-              
+              A third person Open World adventure game, with some RPG mechanics. Where you could solve puzzle find treasures scared around the world and fight Bosses.
             </p>
             <p>
-              
+              This game was part of the Core Games Accelerator Program. Created by Zonda Games with a team of 4 people and it took us 3 months to create it.
+            <ul>
+              I worked as: 
+              <li>
+                - Game Designer: Designing the main game loop, game mechanics, balance issues, creating the puzzles around the open world
+              </li>
+              <li>
+                - Level & UI Designer: Creation of the world, landscape, game zones and also the game UI.
+              </li>
+              <li>
+                - Character Designer: I designed all the pets and enemy mobs
+              </li>
+            </ul>
             </p>
-            
+            <br>          
+
+            <p>
+              Lootbox System:
+              <img data-enlargeable width="560" style="display:block; margin:0 auto;cursor: zoom-in"  src="./assets/images/primal_lootbox.jpg" alt="finance" loading="lazy" data-testimonials-avatar>
+            </p>                          
+            <p>
+              Alien Fauna:
+              <img data-enlargeable width="560" style="display:block; margin:0 auto;cursor: zoom-in"  src="./assets/images/primal_violet.jpg" alt="finance" loading="lazy" width="80%" data-testimonials-avatar>
+            </p>
+            <p>
+              Rune Puzzle:
+              <img data-enlargeable width="560" style="display:block; margin:0 auto;cursor: zoom-in"  src="./assets/images/primal_rune.jpg" alt="finance" loading="lazy" width="80%" data-testimonials-avatar>
+            </p>
+            <p>
+              Device Puzzle:
+              <img data-enlargeable width="560" style="display:block; margin:0 auto;cursor: zoom-in"  src="./assets/images/primal_puzzle.jpg" alt="finance" loading="lazy" width="80%" data-testimonials-avatar>
+            </p>
+            <p>
+              Crystal Puzzle:
+              <img data-enlargeable width="560" style="display:block; margin:0 auto;cursor: zoom-in"  src="./assets/images/primal_puzzles.jpg" alt="finance" loading="lazy" width="80%" data-testimonials-avatar>
+            </p>
+            <p>
+              Boss:
+              <img data-enlargeable width="560" style="display:block; margin:0 auto;cursor: zoom-in"  src="./assets/images/primal_boss.jpg" alt="finance" loading="lazy" width="80%" data-testimonials-avatar>
+            </p>
+            <p>
+              Trial Level  Demo:
+              <iframe style="display:block; margin:0 auto;" width="560" height="315" src="https://www.youtube.com/embed/xkDjz3GQ4GE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </p>
           </section>
         </div>
       </div>
 
+      <div id="myModal3" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <section class="about-text">
+            <h2 class="h2">Space Hunters</h2>
+            <p>
+              A top down shooter game, were you need to accomplish different objectives before escaping from the map.
+            </p>
+            <p>
+              This game participated and won a price in the Core Invitational Jam. Created by Zonda Team (3 people) and it took only 1 month of development.
+             
+            <ul></ul>
+            I worked as: 
+            <li>
+              - Game Designer: Designing the main game loop, game mechanics and game objectives.
+            </li>
+            <li>
+              - Level Designer: Creation and layout of the map.
+            </li>
+            </ul>
+           </p>
+
+           <br>
+            <p>
+              Gameplay:
+              <img data-enlargeable width="560" style="display:block; margin:0 auto;cursor: zoom-in"  src="./assets/images/space_gameplay.jpg" alt="finance" loading="lazy" width="80%" data-testimonials-avatar>
+            </p>  
+            <p>
+              Taking the base:
+              <img data-enlargeable width="560" style="display:block; margin:0 auto;cursor: zoom-in"  src="./assets/images/space_gameplay3.jpg" alt="finance" loading="lazy" width="80%" data-testimonials-avatar>
+            </p>  
+            <p>
+              Activating SAM site:
+              <img data-enlargeable width="560" style="display:block; margin:0 auto;cursor: zoom-in"  src="./assets/images/space_gameplay4.jpg" alt="finance" loading="lazy" width="80%" data-testimonials-avatar>
+            </p>  
+            <p>
+              Activate Mini-Nuke:
+              <img data-enlargeable width="560" style="display:block; margin:0 auto;cursor: zoom-in"  src="./assets/images/space_gameplay5.jpg" alt="finance" loading="lazy" width="80%" data-testimonials-avatar>
+            </p>  
+          </section>
+        </div>
+      </div>      
+
+      <div id="myModal4" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <section class="about-text">
+            <h2 class="h2">TARFU</h2>
+            <p>
+              A Free-for-all deathmatch, 2.5 D side scroller action shooter. 
+            </p>
+            <p>
+              Team Zonda's first game using the Core Game Engine.
+            
+            <ul></ul>
+            I worked as: 
+            <li>
+              - Game Designer: Designing the main game loop, game mechanics and game objectives.
+            </li>
+            <li>
+              - Level Designer: Creation and layout of the interactive map, depending the count of player the map gets bigger and also smaller if the player count diminishes.
+            </li>
+            </ul>
+          </p>
+
+          <br>
+          <p>
+            Inside Base:
+            <img data-enlargeable width="560" style="display:block; margin:0 auto;cursor: zoom-in"  src="./assets/images/TARFU1.jpg" alt="finance" loading="lazy" width="80%" data-testimonials-avatar>
+          </p>  
+          <p>
+            Outside Base:
+            <img data-enlargeable width="560" style="display:block; margin:0 auto;cursor: zoom-in"  src="./assets/images/TARFU2.jpg" alt="finance" loading="lazy" width="80%" data-testimonials-avatar>
+          </p>  
+            <p>
+              Map Overview:
+              <iframe style="display:block; margin:0 auto;" width="560" height="315" src="https://www.youtube.com/embed/C9sTPRrQZ7Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            
+            </p>  
+            <p>
+              Gameplay:
+              <iframe style="display:block; margin:0 auto;" width="560" height="315" src="https://www.youtube.com/embed/gYCs11hIIls" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </p>  
+            <p>
+              Interactive Map:
+              <iframe style="display:block; margin:0 auto;" width="560" height="315" src="https://www.youtube.com/embed/NORXv9xVAYc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </p>  
+          </section>
+        </div>
+      </div>   
+      
+      <div id="myModal5" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <section class="about-text">
+            <h2 class="h2">Deadly Cube - Demo</h2>
+            <p>
+              Simple demo created to apply to the Core Games Bootcamp Course, a month duration course were you learned more advance topic related to Core Games.
+            </p>
+            <p>
+              I downloaded, learned about Core and created this demo in less than 24hs because I found out that the deadline to apply to Core Games Bootcamp was the next day. 
+            </p>
+            <p>
+              All hands on deck !!! I got the Core Games framework and quickly started reading the documentation to create this simple demo. 
+              At the end I was selected and finished the Fall 2020 Core Game Bootcamp afterwards.
+            </p>
+            <br>
+            <p>
+              Gameplay Demo:
+              <iframe style="display:block; margin:0 auto;" width="560" height="315" src="https://www.youtube.com/embed/he0WB4_GWJ8" title="YouTube video player" modesbranding=1 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </p>             
+            
+          </section>
+        </div>
+      </div>     
+      
+      <div id="myModal6" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <section class="about-text">
+            <h2 class="h2">Cubetrix</h2>
+            <p>
+              Mobile game for iOS. A puzzle type of game were the top layer of a cube shuffles and you needed to put it back together in the correct way.
+            </p>
+            <p>
+              The first mobile game created by Zonda. I worked as the Game Designer, designing mechanics and puzzles of the game.
+            </p>
+            <br>
+            <p>
+              Gameplay Demo:
+              <iframe style="display:block; margin:0 auto;" width="560" height="315" src="https://www.youtube.com/embed/V-8pFzz0L28" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </p>            
+            
+          </section>
+        </div>
+      </div>     
+      
+      <div id="myModal7" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <section class="about-text">
+            <h2 class="h2">Numbra</h2>
+            <p>
+              Mobile game for Android were you needed to fill the screen with ballons until completing the level and meanwhile avoided getting hit while creating the ballons.
+            </p>
+            <p>
+              Created by Zonda. I worked as the Game Designer.
+            </p>
+            <br>
+            <p>
+              Gameplay Demo:
+              <iframe style="display:block; margin:0 auto;" width="560" height="315" src="https://www.youtube.com/embed/vLv_oHxgq1M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </p>  
+            
+          </section>
+        </div>
+      </div>        
       <!--
         - #BLOG
       
@@ -1043,13 +1243,14 @@
       <!--
         - #CONTACT
       -->
-
+      <!--  
       <article class="contact" data-page="contact">
 
         <header>
           <h2 class="h2 article-title">Contact</h2>
         </header>
 
+        
         <section class="mapbox" data-mapbox>
           <figure>
             <iframe
@@ -1057,10 +1258,11 @@
               width="400" height="300" loading="lazy"></iframe>
           </figure>
         </section>
+      
 
         <section class="contact-form">
 
-          <h3 class="h3 form-title">Contact Form</h3>
+          <h3 class="h3 form-title">Contact me</h3>
 
           <form action="#" class="form" data-form>
 
@@ -1078,25 +1280,17 @@
             </button>
 
           </form>
-
         </section>
-
       </article>
-
+      -->
     </div>
-
   </main>
-
-
-
-
-
 
   <!--
     - custom js link
   -->
   <script src="./assets/js/script.js"></script>
-
+  
   <!--
     - ionicon link
   -->

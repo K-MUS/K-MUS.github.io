@@ -159,23 +159,74 @@ for (let i = 0; i < navigationLinks.length; i++) {
 }
 
 // Get the modal
-var modal = document.getElementById("myModal");
+var modal = document.getElementsByClassName("modal");
 
 // Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+var btn = document.getElementsByClassName("myBtn");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var span = document.getElementsByClassName("close");
 
 // When the user clicks the button, open the modal 
-btn.onclick = function() {
-  modal.style.display = "block";
+//unnamed
+btn[0].onclick = function() {
+  modal[0].style.display = "block";
+}
+//Primal
+btn[1].onclick = function() {
+  modal[1].style.display = "block";
+}
+//Space
+btn[2].onclick = function() {
+  modal[2].style.display = "block";
+}
+//TARFU
+btn[3].onclick = function() {
+  modal[3].style.display = "block";
+}
+//Deadly Cube
+btn[4].onclick = function() {
+  modal[4].style.display = "block";
+}
+//cubetrix
+btn[5].onclick = function() {
+  modal[5].style.display = "block";
+}
+//numbra
+btn[6].onclick = function() {
+  modal[6].style.display = "block";
 }
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
+// Unnamed
+span[0].onclick = function() {
+  modal[0].style.display = "none";
 }
+// Primal
+span[1].onclick = function() {
+  modal[1].style.display = "none";
+}
+// Space
+span[2].onclick = function() {
+  modal[2].style.display = "none";
+}
+// TARFU
+span[3].onclick = function() {
+  modal[3].style.display = "none";
+}
+// Deadly 
+span[4].onclick = function() {
+  modal[4].style.display = "none";
+}
+// Cubetrix
+span[5].onclick = function() {
+  modal[5].style.display = "none";
+}
+// Numbra
+span[6].onclick = function() {
+  modal[6].style.display = "none";
+}
+
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
@@ -184,3 +235,31 @@ window.onclick = function(event) {
   }
 }
 
+$('img[data-enlargeable]').addClass('img-enlargeable').click(function() {
+  var src = $(this).attr('src');
+  var modal;
+
+  function removeModal() {
+    modal.remove();
+    $('body').off('keyup.modal-close');
+  }
+  modal = $('<div>').css({
+    background: 'RGBA(0,0,0,.5) url(' + src + ') no-repeat center',
+    backgroundSize: 'contain',
+    width: '100%',
+    height: '100%',
+    position: 'fixed',
+    zIndex: '10000',
+    top: '0',
+    left: '0',
+    cursor: 'zoom-out'
+  }).click(function() {
+    removeModal();
+  }).appendTo('body');
+  //handling ESC
+  $('body').on('keyup.modal-close', function(e) {
+    if (e.key === 'Escape') {
+      removeModal();
+    }
+  });
+});
